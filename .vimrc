@@ -21,6 +21,10 @@ autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 autocmd BufRead *.java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 autocmd BufRead *.java set makeprg=ant\ -find\ build.xml
 
+" Action Script
+autocmd BufRead *.as set filetype=actionscript 
+autocmd BufRead *.mxml set filetype=mxml
+
 " File 
 nmap <Space>b :ls<CR>:buffer 
 nmap <Space>v :vsplit<CR><C-w><C-w>:ls<CR>:buffer
