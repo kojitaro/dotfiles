@@ -25,6 +25,10 @@ autocmd FileType python setl tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead *.java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 autocmd BufRead *.java set makeprg=ant\ -find\ build.xml
 
+" Action Script
+autocmd BufRead *.as set filetype=actionscript 
+autocmd BufRead *.mxml set filetype=mxml
+
 " PHP Develop
 
 " File 
