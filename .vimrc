@@ -19,7 +19,7 @@ autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 
 "Ruby Develop
-autocmd FileType python setl tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2
 
 " Java Develop
 autocmd BufRead *.java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
