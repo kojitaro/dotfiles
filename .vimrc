@@ -17,6 +17,10 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
+
+"Ruby Develop
+autocmd FileType python setl tabstop=2 shiftwidth=2 softtabstop=2
+
 " Java Develop
 autocmd BufRead *.java set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 autocmd BufRead *.java set makeprg=ant\ -find\ build.xml
